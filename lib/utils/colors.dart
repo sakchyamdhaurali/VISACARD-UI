@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppColors{
-  static Color bgColor = Colors.green.shade200;
+  static Color bgColor = Colors.orange.shade200;
 
   static List<BoxShadow> shadows= 
   [

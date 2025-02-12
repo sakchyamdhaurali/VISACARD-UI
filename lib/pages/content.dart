@@ -11,6 +11,22 @@ const Content({ Key? key }) : super(key: key);
         children: [
 
           Positioned(
+            top: 50,
+            left: 30,
+            
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: 200,           
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  opacity: 0.3,
+                  image: AssetImage('assets/map.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),),
+
+          Positioned(
             top: 0,
             left: 10,
             
@@ -30,9 +46,23 @@ const Content({ Key? key }) : super(key: key);
               ),
             ),),
 
+ Positioned(
+            top: 35,
+            left: 85,
+            child: Text(
+              'Laxmi Sunrise Bank', style: TextStyle(
+                fontSize: 12,
+                color: Colors.red,
+                decoration: TextDecoration.underline,
+                decorationColor: Colors.red,
+                fontWeight: FontWeight.bold,
+
+              ),
+              ),
+            ),
              Positioned(
-            top: 30,
-            right: 40,
+            top: 20,
+            right: 10,
             
             child: Text(
               'VALID ONLY IN NEPAL, INDIA AND BHUTAN', style: TextStyle(
@@ -117,6 +147,22 @@ const Content({ Key? key }) : super(key: key);
             ),
 
  Positioned(
+              bottom: 18,
+              right: 37,
+            child: Container(
+              height: 50,
+              width: 100,
+             
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.7),
+                shape: BoxShape.rectangle,
+               
+              ) ,
+            )
+            ,
+              
+            ),
+ Positioned(
          bottom: 10,
          right: 50,
             child: Container(
@@ -132,6 +178,44 @@ const Content({ Key? key }) : super(key: key);
                 ),
               ),
             ),),
+
+            //  Positioned(
+            //   top: -100,
+            //    right: -100,
+            // child: Container(
+            //   height: 200,
+            //   width: 250,
+             
+            //   decoration: BoxDecoration(
+            //     color: Colors.white.withOpacity(0.3),
+            //     shape: BoxShape.circle
+            //   ) ,
+            // )
+            // ,
+              
+            // ),
+
+            //   Positioned(
+            //   bottom: -100,
+            // child: Container(
+            //   height: 165,
+            //   width: MediaQuery.of(context).size.width,
+             
+            //   decoration: BoxDecoration(
+            //     color: Colors.orange.shade200.withOpacity(0.1),
+            //     shape: BoxShape.rectangle,
+            //    borderRadius: BorderRadius.circular(10)
+            //   ) ,
+            // )
+            // ,
+              
+            // ),
+
+            
+
+
+  
+
 
         ],
       ),
