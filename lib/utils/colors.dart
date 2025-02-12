@@ -17,7 +17,7 @@ class AppColors{
     color: Colors.green.shade900.withOpacity(0.3),
     spreadRadius: 2,
     blurRadius: 20,
-    offset: Offset(7, 7),
+    // offset: Offset(7, 7),
   ),
   
 
